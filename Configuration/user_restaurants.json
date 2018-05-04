@@ -1,0 +1,137 @@
+{
+  "restaurants": [
+    {
+      "name": "BCD",
+      "weather": "cold",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 4
+    },
+    {
+      "name": "Mod Pizza",
+      "weather": "undefined",
+      "genre": "pizza",
+      "time": 1,
+      "distance": 1
+    },
+    {
+      "name": "California Fish Grill",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1.5,
+      "distance": 1
+    },
+    {
+      "name": "Chipotle",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "Jazz Cat",
+      "weather": "cold",
+      "genre": "hotpot",
+      "time": 2,
+      "distance": 2
+    },
+    {
+      "name": "Yoshinoya",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 2
+    },
+    {
+      "name": "Pizza Rev",
+      "weather": "undefined",
+      "genre": "pizza",
+      "time": 1,
+      "distance": 2
+    },
+    {
+      "name": "Halal Guys",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "Jersey Mike's",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "Ichi Ichi",
+      "weather": "cold",
+      "genre": "hotpot",
+      "time": 2,
+      "distance": 3
+    },
+    {
+      "name": "Thai Twist",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1.5,
+      "distance": 1.5
+    },
+    {
+      "name": "Tamaya",
+      "weather": "cold",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "Greedy Cat Taste",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "99 Ranch Chinese Food",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "Panera",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "JJ Bakery",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 1.5
+    },
+    {
+      "name": "Boiling Point",
+      "weather": "cold",
+      "genre": "hotpot",
+      "time": 3,
+      "distance": 2
+    },
+    {
+      "name": "MJ Cafe",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1.5,
+      "distance": 2
+    },
+    {
+      "name": "Mongolian BBQ",
+      "weather": "undefined",
+      "genre": "undefined",
+      "time": 1,
+      "distance": 0.5
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "restaurants": [
+        {
+            "distance": 4,
+            "genre": "undefined",
+            "name": "BCD",
+            "time": 1,
+            "weather": "cold"
+        },
+        {
+            "distance": 1,
+            "genre": "undefined",
+            "name": "Mod Pizza",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 3,
+            "genre": "hotpot",
+            "name": "Jazz Cat",
+            "time": 2,
+            "weather": "cold"
+        }
+    ]
+}
