@@ -5,133 +5,152 @@
       "weather": "cold",
       "genre": "undefined",
       "time": 1,
-      "distance": 4
+      "distance": 4,
+      "last_visit": null
     },
     {
       "name": "Mod Pizza",
       "weather": "undefined",
       "genre": "pizza",
       "time": 1,
-      "distance": 1
+      "distance": 1,
+      "last_visit": null
     },
     {
       "name": "California Fish Grill",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1.5,
-      "distance": 1
+      "distance": 1,
+      "last_visit": null
     },
     {
       "name": "Chipotle",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Jazz Cat",
       "weather": "cold",
       "genre": "hotpot",
       "time": 2,
-      "distance": 2
+      "distance": 2,
+      "last_visit": null
     },
     {
       "name": "Yoshinoya",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 2
+      "distance": 2,
+      "last_visit": null
     },
     {
       "name": "Pizza Rev",
       "weather": "undefined",
       "genre": "pizza",
       "time": 1,
-      "distance": 2
+      "distance": 2,
+      "last_visit": null
     },
     {
       "name": "Halal Guys",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Jersey Mike's",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Ichi Ichi",
       "weather": "cold",
       "genre": "hotpot",
       "time": 2,
-      "distance": 3
+      "distance": 3,
+      "last_visit": null
     },
     {
       "name": "Thai Twist",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1.5,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Tamaya",
       "weather": "cold",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Greedy Cat Taste",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "99 Ranch Chinese Food",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Panera",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "JJ Bakery",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 1.5
+      "distance": 1.5,
+      "last_visit": null
     },
     {
       "name": "Boiling Point",
       "weather": "cold",
       "genre": "hotpot",
       "time": 3,
-      "distance": 2
+      "distance": 2,
+      "last_visit": null
     },
     {
       "name": "MJ Cafe",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1.5,
-      "distance": 2
+      "distance": 2,
+      "last_visit": null
     },
     {
       "name": "Mongolian BBQ",
       "weather": "undefined",
       "genre": "undefined",
       "time": 1,
-      "distance": 0.5
+      "distance": 0.5,
+      "last_visit": null
     }
   ]
 }

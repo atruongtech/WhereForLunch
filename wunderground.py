@@ -3,7 +3,9 @@ import datetime
 import json
 import requests
 
-cache_file_path = "./Configuration/weather_cache.json"
+temperature_key = "feelslike_f"
+
+__cache_file_path = "./Configuration/weather_cache.json"
 
 
 def __is_cache_valid(weather_data):
@@ -15,7 +17,7 @@ def __is_cache_valid(weather_data):
 
 def __read_cache():
     try:
-        with open(cache_file_path, "r") as weather_cache:
+        with open(__cache_file_path, "r") as weather_cache:
             weather_data = json.load(weather_cache)
             if __is_cache_valid(weather_data):
                 return weather_data
@@ -26,14 +28,14 @@ def __read_cache():
 
 
 def __write_cache(weather_data):
-    with open(cache_file_path, "w") as weather_cache:
+    with open(__cache_file_path, "w") as weather_cache:
         json.dump(weather_data, weather_cache, indent=4)
 
 
 def get_weather_data():
     cache = __read_cache()
     if cache is not None:
-        return cache
+        return cache["current_observation"]
 
     request_string = str.format("{0}{1}{2}{3}.json", endpoint_url_base, api_key, "/conditions/q/", target_city)
     response = requests.get(request_string)
@@ -43,7 +45,7 @@ def get_weather_data():
 
     weather_data = response.json()
     __write_cache(weather_data)
-    return weather_data
+    return weather_data["current_observation"]
 
 
 if __name__ == "__main__":
