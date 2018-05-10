@@ -30,6 +30,6 @@ class Restaurant:
             "genre": self.genre.name,
             "time": self.time,
             "distance": self.distance,
-            "last_visit": datetime.strftime(self.last_visit, datetime_format)
+            "last_visit": datetime.strftime(self.last_visit, datetime_format) if self.last_visit is not None else None
         }
         return temp_dict
