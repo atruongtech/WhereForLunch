@@ -5,10 +5,10 @@ datetime_format = "%d%m%y"
 
 
 class Restaurant:
-    def __init__(self, name, weather, genre, time, distance, last_visit):
+    def __init__(self, name, weather, genre_list, time, distance, last_visit):
         self.name = name
         self.weather = weather
-        self.genre = genre
+        self.genre_list = genre_list
         self.time = time
         self.distance = distance
         self.last_visit = last_visit
@@ -18,7 +18,7 @@ class Restaurant:
         return cls(
             dict_obj["name"],
             weather_map[dict_obj["weather"]],
-            genre_map[dict_obj["genre"]],
+            [genre_map[g] for g in dict_obj["genre"]],
             dict_obj["time"],
             dict_obj["distance"],
             datetime.strptime(dict_obj["last_visit"], datetime_format) if dict_obj["last_visit"] is not None else None)
@@ -27,7 +27,7 @@ class Restaurant:
         temp_dict = {
             "name": self.name,
             "weather": self.weather.name,
-            "genre": self.genre.name,
+            "genre": [g.name for g in self.genre_list],
             "time": self.time,
             "distance": self.distance,
             "last_visit": datetime.strftime(self.last_visit, datetime_format) if self.last_visit is not None else None

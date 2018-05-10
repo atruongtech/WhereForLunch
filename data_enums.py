@@ -10,7 +10,10 @@ class Weather(Enum):
 class Genre(Enum):
     undefined = 0,
     hotpot = 1,
-    pizza = 2
+    pizza = 2,
+    sandwiches = 3,
+    rice = 4,
+    soup = 5
 
 
 weather_map = {
@@ -21,5 +24,8 @@ weather_map = {
 genre_map = {
     "undefined": Genre.undefined,
     "hotpot": Genre.hotpot,
-    "pizza": Genre.pizza
+    "pizza": Genre.pizza,
+    "sandwiches": Genre.sandwiches,
+    "rice": Genre.rice,
+    "soup": Genre.soup
 }
