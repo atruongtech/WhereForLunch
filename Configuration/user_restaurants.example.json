@@ -1,0 +1,198 @@
+{
+    "restaurants": [
+        {
+            "distance": 4,
+            "genre": [
+                "soup"
+            ],
+            "last_visit": null,
+            "name": "BCD",
+            "time": 1,
+            "weather": "cold"
+        },
+        {
+            "distance": 1,
+            "genre": [
+                "pizza"
+            ],
+            "last_visit": null,
+            "name": "Mod Pizza",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "California Fish Grill",
+            "time": 1.5,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "Chipotle",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 2,
+            "genre": [
+                "hotpot",
+                "soup"
+            ],
+            "last_visit": "090518",
+            "name": "Jazz Cat",
+            "time": 2,
+            "weather": "cold"
+        },
+        {
+            "distance": 2,
+            "genre": [
+                "rice"
+            ],
+            "last_visit": null,
+            "name": "Yoshinoya",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 2,
+            "genre": [
+                "pizza"
+            ],
+            "last_visit": null,
+            "name": "Pizza Rev",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "Halal Guys",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "sandwiches"
+            ],
+            "last_visit": null,
+            "name": "Jersey Mike's",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 3,
+            "genre": [
+                "hotpot",
+                "soup"
+            ],
+            "last_visit": "090518",
+            "name": "Ichi Ichi",
+            "time": 2,
+            "weather": "cold"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "soup"
+            ],
+            "last_visit": null,
+            "name": "Thai Twist",
+            "time": 1.5,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "soup"
+            ],
+            "last_visit": null,
+            "name": "Tamaya",
+            "time": 1,
+            "weather": "cold"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "Greedy Cat Taste",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "99 Ranch Chinese Food",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "sandwiches"
+            ],
+            "last_visit": null,
+            "name": "Panera",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 1.5,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "JJ Bakery",
+            "time": 1,
+            "weather": "undefined"
+        },
+        {
+            "distance": 2,
+            "genre": [
+                "hotpot",
+                "soup"
+            ],
+            "last_visit": null,
+            "name": "Boiling Point",
+            "time": 3,
+            "weather": "cold"
+        },
+        {
+            "distance": 2,
+            "genre": [
+                "hotpot",
+                "rice"
+            ],
+            "last_visit": "100518",
+            "name": "MJ Cafe",
+            "time": 1.5,
+            "weather": "undefined"
+        },
+        {
+            "distance": 0.5,
+            "genre": [
+                "undefined"
+            ],
+            "last_visit": null,
+            "name": "Mongolian BBQ",
+            "time": 1,
+            "weather": "undefined"
+        }
+    ]
+}
