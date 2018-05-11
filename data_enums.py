@@ -13,19 +13,5 @@ class Genre(Enum):
     pizza = 2,
     sandwiches = 3,
     rice = 4,
-    soup = 5
-
-
-weather_map = {
-    "undefined": Weather.undefined,
-    "cold": Weather.cold,
-    "hot": Weather.hot
-}
-genre_map = {
-    "undefined": Genre.undefined,
-    "hotpot": Genre.hotpot,
-    "pizza": Genre.pizza,
-    "sandwiches": Genre.sandwiches,
-    "rice": Genre.rice,
-    "soup": Genre.soup
-}
+    soup = 5,
+    noodles = 6

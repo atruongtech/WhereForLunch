@@ -1,4 +1,4 @@
-from data_enums import weather_map, genre_map
+from data_enums import Weather, Genre
 from datetime import datetime
 
 datetime_format = "%d%m%y"
@@ -17,8 +17,8 @@ class Restaurant:
     def from_dict(cls, dict_obj):
         return cls(
             dict_obj["name"],
-            weather_map[dict_obj["weather"]],
-            [genre_map[g] for g in dict_obj["genre"]],
+            Weather[dict_obj["weather"]],
+            [Genre[g] for g in dict_obj["genre"]],
             dict_obj["time"],
             dict_obj["distance"],
             datetime.strptime(dict_obj["last_visit"], datetime_format) if dict_obj["last_visit"] is not None else None)
