@@ -9,8 +9,11 @@ restaurant_json = file_read_write.read_json("./Configuration/user_restaurants.js
 restaurants = [Restaurant.from_dict(r) for r in restaurant_json]
 
 weather_data = wunderground.get_weather_data()
+if weather_data is None:
+    print("Trouble getting weather data. Won't be able to recommend based on weather.")
+
 eligible_restaurants = [r for r in restaurants if r.weather == Weather.cold] \
-    if float(weather_data[wunderground.temperature_key]) < 72 \
+    if weather_data is not None and float(weather_data[wunderground.temperature_key]) < 72 \
     else restaurants
 
 accepted = None
