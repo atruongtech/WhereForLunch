@@ -57,11 +57,12 @@ def __choose_and_present(eligible_restaurants, temperature):
 
 
 def __filter_genre(filter_strings, restaurants):
+    filtered_restaurants = []
     if filter_strings:
         for f in filter_strings:
-            restaurants = [r for r in filter(lambda r: Genre[f] in r.genre_list, restaurants)]
+            filtered_restaurants.extend(r for r in filter(lambda r: Genre[f] in r.genre_list, restaurants))
 
-    return restaurants
+    return filtered_restaurants
 
 
 if __name__ == "__main__":
