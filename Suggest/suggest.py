@@ -1,30 +1,26 @@
-import file_read_write
-import output_formatting
-import wunderground
 from Configuration.whereforlunch_config import restaurants_path
 from data_enums import Weather, Genre
-from restaurant import Restaurant
-
-import random
 from datetime import datetime
+import file_read_write
+import output_formatting
+import random
+import wunderground
 
 
-def suggest_based_on_temp(genre_filters=None):
+def suggest_based_on_temp(restaurants, genre_filters=None):
     weather_data = wunderground.get_weather_data()
     if weather_data is None:
         print("Trouble getting weather data. Won't be able to recommend based on weather.")
-        return suggest(genre_filters)
+        return suggest(restaurants, genre_filters)
     else:
         temperature = float(weather_data[wunderground.temperature_key])
-        return suggest(genre_filters, temperature)
+        return suggest(restaurants, genre_filters, temperature)
 
 
-def suggest(genre_filters=None, temperature=None):
-    restaurant_json = file_read_write.read_json(restaurants_path)
-    restaurants = [Restaurant.from_dict(r) for r in restaurant_json]
-
+def suggest(restaurants, genre_filters=None, temperature=None):
     eligible_restaurants = __filter_weather(restaurants, temperature)
-    eligible_restaurants = __filter_genre(genre_filters, eligible_restaurants)
+    eligible_restaurants = __filter_genre(eligible_restaurants, genre_filters)
+
     if not eligible_restaurants:
         print("No restaurants match the requested filters.")
         return
@@ -48,21 +44,22 @@ def __filter_weather(restaurants, temperature):
         else restaurants
 
 
+def __filter_genre(restaurants, filter_strings):
+    filtered_restaurants = []
+    if filter_strings:
+        for f in filter_strings:
+            filtered_restaurants.extend(r for r in filter(lambda r: Genre[f] in r.genre_list, restaurants))
+        return filtered_restaurants
+    else:
+        return restaurants
+
+
 def __choose_and_present(eligible_restaurants, temperature):
     selected_restaurant = eligible_restaurants[random.randint(0, len(eligible_restaurants) - 1)]
     suggestion_statements = output_formatting.generate_suggestion_strings(selected_restaurant, temperature)
     for statement in suggestion_statements:
         print(statement)
     return selected_restaurant
-
-
-def __filter_genre(filter_strings, restaurants):
-    filtered_restaurants = []
-    if filter_strings:
-        for f in filter_strings:
-            filtered_restaurants.extend(r for r in filter(lambda r: Genre[f] in r.genre_list, restaurants))
-
-    return filtered_restaurants
 
 
 if __name__ == "__main__":

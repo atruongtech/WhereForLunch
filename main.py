@@ -1,6 +1,7 @@
+from Browse import list_restaurants
+from Configuration.whereforlunch_config import restaurants_path
 from data_enums import Genre
 from restaurant import Restaurant
-from Configuration.whereforlunch_config import restaurants_path
 from Suggest import suggest
 import argparse
 import file_read_write
@@ -27,21 +28,10 @@ def parse_args():
     return parser.parse_args()
 
 
-def list_restaurants(genre_string):
-    restaurant_json = file_read_write.read_json(restaurants_path)
-    restaurants = [Restaurant.from_dict(r) for r in restaurant_json]
-
-    if genre_string:
-        filtered_restaurants = [r for r in restaurants if Genre[genre_string] in r.genre_list]
-        for r in filtered_restaurants:
-            print(r.name)
-    else:
-        for r in restaurants:
-            print(r.name)
-
-
+restaurant_json = file_read_write.read_json(restaurants_path)
+restaurants = [Restaurant.from_dict(r) for r in restaurant_json]
 arguments = parse_args()
 if arguments.choices is None:
-    arguments.suggest_strategy(arguments.filter)
+    arguments.suggest_strategy(restaurants, arguments.filter)
 else:
-    list_restaurants(arguments.choices)
+    list_restaurants.list_restaurants(restaurants, arguments.choices)
