@@ -1,3 +1,4 @@
 Configuration/wunderground_config.py
 Configuration/weather_cache.json
 Configuration/user_restaurants.json
+Configuration/google_config.py
