@@ -13,9 +13,12 @@ def suggest(restaurants, genre_filters=None, temperature=None):
 
 
 def __filter_weather(restaurants, temperature):
-    return [r for r in restaurants if r.weather == Weather.cold] \
-        if temperature is not None and float(temperature) < 72 \
-        else restaurants
+    filtered_restaurants =[]
+    filtered_restaurants.extend(restaurants)
+    if temperature is not None and float(temperature) < 72:
+        # double the probability of a cold weather restaurant
+        filtered_restaurants.extend([r for r in restaurants if r.weather == Weather.cold])
+    return filtered_restaurants
 
 
 def __filter_genre(restaurants, filter_strings):
